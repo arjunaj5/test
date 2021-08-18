@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Saaspect</title>
+</head>
+
+<body>
+    <main>
+        <img src="./src/images/image.png" alt="thumb">
+        <div class="form-container">
+            <div class="form">
+                <h1>Sign Up</h1>
+                <form action="">
+                    <div class="input-group hide">
+                        <label for="name">Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-group hide">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="text">
+                    </div>
+
+                    <button id="sign-up">Sign Up</button>
+                </form>
+            </div>
+
+
+            <p class="faded">
+                <span>
+                    or connect with
+                </span>
+            </p>
+            <div class="social-icons">
+                <img src="./src/icons/microsoft.svg" alt="">
+                <img src="./src/icons/fb.svg" alt="">
+                <img src="./src/icons/google.svg" alt="">
+                <img src="./src/icons/linkedin.svg" alt="">
+            </div>
+            <div class="footer">
+                <span>Already have an Account ?</span>
+                <span class="login" id="login" onclick="toogle(event)">Login</span>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./src/script.js"></script>
+
+</html>

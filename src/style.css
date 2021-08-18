@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+:root{
+ --heading-font: normal 500 30px Poppins;
+ --label-font: normal 400 1rem Poppins;
+ --button-font: normal 600 20px Poppins;
+}
+h1{
+    font: var(--heading-font);
+}
+label,input{
+font: var(--label-font);
+display: block;
+width: 100%;
+margin: 5px 0;
+
+}
+input{
+border-radius: 5px;
+border: none;
+background: #EAF4FF;
+
+}
+button{
+    font: var(--button-font);
+    cursor: pointer;
+}
+button:active{
+    transform: scale(1.05);
+}
+main{
+  margin: 1rem;
+    max-width: 100vw;
+    display: flex;
+    gap:4.8vw;
+}
+main>img{
+max-width: 53.6%;
+height: 100vh;
+
+}
+/* -------------Form ------------- */
+.form-container{
+    flex-grow: 1;
+   
+}
+.form-container .form{
+    margin: 1rem;
+}
+.form-container h1{
+text-align: center;
+}
+
+.form-container button{
+    display: block;
+    width: 180px;
+    padding: 3px 0;
+    text-align: center;
+    border: 0;
+    color: white;
+    margin: 20px auto;
+    background: #0075FF;
+    border-radius: 6.99346px;
+   
+}
+.form-container .faded {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   font: normal 300 14px Poppins;
+   color: #745f5fcc;
+
+}
+.form-container .faded span{
+    display: inline-block;
+    margin: 0 20px;
+  
+}
+.form-container  .faded::before,.faded::after{
+     content: '';
+     width: 80px;
+     height: .7px;
+     background-color: #52525280;
+     display: inline-block;
+     vertical-align: middle;
+ }
+.form-container .footer{
+    display: flex;
+    justify-content: space-between;
+}
+.form-container .social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+   
+}
+.form-container .social-icons img{
+    width: 30px;
+}
+.form-container .social-icons img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition:  transform .5s;
+}
+.form-container .footer .login{
+    cursor: pointer;
+    margin-right: 1rem;
+}
+@media only screen and (max-width:335px){
+    h1{
+        font-size: 15.5px;
+    }
+    main>img{
+     display: none;
+        
+        }
+        label{
+            font-size: 10px;
+        }
+        input{
+            font-weight: bold;
+            font-size: .9rem;
+        }
+       .form-container .social-icons{
+            margin: 1rem;
+        }
+        .social-icons img {
+            width: 18px;
+        }
+
+        .form-container .faded span{
+            font-size: 8px;
+        }
+}
